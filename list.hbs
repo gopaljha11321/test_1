@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>List data</title>
+    </head>
+    <for>
+        <h1>AI project</h1>
+        <h2>Sample Answer:</h2>
+        <table border="2px" width="100%">
+            <tr>
+                <td>Course Number</td>
+                <td>Question Number</td>
+                <td>Sample Answer</td>
+            </tr>
+            {{#each result}}
+            <tr>
+                <td>
+                      {{this.C_no}}  
+                </td>
+                <td>
+                      {{this.Q_no}}  
+                </td>
+                <td>
+                      {{this.answer}}  
+                </td>
+            </tr>
+             {{/each}}
+        </table>
+        <h2>Keys</h2>
+        <table border="2px" width="100%">
+            <tr>
+                <td>Course Number</td>
+                <td>Question Number</td>
+                <td>Keywords</td>
+            </tr>
+            {{#each result2}}
+            <tr>
+                <td>
+                      {{this.C_no}}  
+                </td>
+                <td>
+                      {{this.Q_no}}  
+                </td>
+                <td>
+                      {{this.k}}  
+                </td>
+            </tr>
+             {{/each}}
+        </table>
+       
+    </body>
+
+</html>
